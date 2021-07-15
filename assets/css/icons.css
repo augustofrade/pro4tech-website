@@ -1,0 +1,17 @@
+.c-icon-transacionais {
+    width:50px;
+    height: 50px;
+}
+
+.c-icon-transacionais { content: url("../img/icons/apps-transacionais.svg"); }
+
+.c-icon-analiticas { content: url("../img/icons/apps-analiticas.svg"); }
+
+.c-icon-negocios { content: url("../img/icons/apps-negocios.svg"); }
+
+.c-icon-ia { content: url("../img/icons/ia.svg"); }
+
+.c-icon-rpa { content: url("../img/icons/rpa.svg"); }
+
+
+.c-icon-iot { content: url("../img/icons/iot.svg"); }
