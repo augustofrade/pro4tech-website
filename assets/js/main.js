@@ -18,6 +18,7 @@
 	$(window).on('scroll', function () {
 		var pixels = 50;
 		var top = 1200;
+		if(!["/", "/index.html"].includes(window.location.pathname)) return;
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-lg').addClass('navbar-reduce');
 			$('.navbar-expand-lg').removeClass('navbar-trans');

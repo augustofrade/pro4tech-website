@@ -10,7 +10,7 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="assets/img/favicon.ico.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon2.ico">
 	<!-- Site All Style Sheet Css -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -23,6 +23,13 @@
 	<!-- Site Main Style Sheet Css -->
 	<link href="assets/css/style.css" rel="stylesheet" />
 	<link href="assets/css/responsive.css" rel="stylesheet" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-200775077-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){​​​​​dataLayer.push(arguments);}​​​​​
+		gtag('js', new Date()); gtag('config', 'UA-200775077-1');
+	</script>
 </head>
 
 <body>
@@ -39,8 +46,8 @@
 	<nav class="navbar navbar-b navbar-trans fixed-top navbar-expand-lg" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand js-scroll" href="index.html">
-				<img src="assets/img/logo-sliders.png" class="white-logo" alt="logo">
-				<img src="assets/img/logo-black.png" class="black-logo" alt="logo">
+				<img src="assets/img/logo-sliders.svg" class="white-logo" style="width: 205px; height: 56px;" alt="logo">
+				<img src="assets/img/logo-black.svg" class="black-logo" style="width: 205px; height: 56px;" alt="logo">
 			</a>
 			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
 				<span></span>
@@ -52,8 +59,10 @@
 					<li class="nav-item"><a class="nav-link js-scroll active" href="#home">Home</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll" href="#about">Sobre nós</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll" href="#services">Serviços</a></li>
-					<li class="nav-item"><a class="nav-link js-scroll" href="#project">Como atuamos</a></li>
-					<li class="nav-item"><a class="nav-link js-scroll" href="#review">Review</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll" href="#metodologia">Metodologia</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll" href="#cases">Cases</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll" href="#team">Time</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll" href="#review">Depoimentos</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll" href="#blog">Blog</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contato</a></li>
 				</ul>
@@ -73,7 +82,7 @@
                                 <div class="slider-caption">
                                     <h1>Fábrica de Software</h1>
                                     <h4>Automatize, inove e cresça com os nossos serviços de aplicativos </p> que potencializam sua transformação digital. </h4>
-									<a href="#" class="button home-btn-1">Saiba Mais</a>
+									<a href="./servicos/fabrica-software.html" class="button home-btn-1">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +97,7 @@
                                 <div class="slider-caption">
                                     <h1>Business Intelligence a Analytics</h1>
                                     <h4>Best Technology Solution</h4>
-									<a href="#" class="button home-btn-2">Saiba Mais</a>
+									<a href="./servicos/aplicacoes-analiticas.html" class="button home-btn-2">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +112,7 @@
                                 <div class="slider-caption">
                                     <h1>Processos de Negócios</h1>
                                     <h4>Help Your Startup Business</h4>
-									<a href="#" class="button home-btn-2">Saiba Mais</a>
+									<a href="./servicos/processos.html" class="button home-btn-2">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +127,7 @@
                                 <div class="slider-caption">
                                     <h1>Robotic Process Automation (RPA)</h1>
                                     <h4>Help Your Startup Business</h4>
-									<a href="#" class="button home-btn-2">Saiba Mais</a>
+									<a href="./servicos/robotizacao.html" class="button home-btn-2">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +142,7 @@
                                 <div class="slider-caption">
                                     <h1>Inteligência artificial</h1>
                                     <h4>Atualize-se sobre inteligência artificial e aprenda como ela pode ajudá-lo </p> a agregar valor aos negócios com nossa coleção selecionada de insights.</h4>
-									<a href="#" class="button home-btn-2">Saiba Mais</a>
+									<a href="./servicos/ia.html" class="button home-btn-2">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +157,7 @@
                                 <div class="slider-caption">
                                     <h1>Internet das Coisas (IOT)</h1>
                                     <h4>Help Your Startup Business</h4>
-									<a href="#" class="button home-btn-2">Saiba Mais</a>
+									<a href="./servicos/iot.html" class="button home-btn-2">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -159,38 +168,7 @@
     </div>
 	<!-- End Home Section -->
 
-	<!-- Start Partner Logo Section -->
-    <div class="partner-area pt-70 pb-30">
-        <div class="container">
-            <div id="partner-carousel" class="partner-carousel owl-carousel owl-theme owl-loaded">
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-1.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-2.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-3.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-4.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-5.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-6.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-7.png" alt="partner-image">
-                </div>
-                <div class="partner-item">
-                    <img src="assets/img/partner-logo/client-8.png" alt="partner-image">
-                </div>
-            </div>
-        </div>
-    </div>
-	<!-- End Partner Logo Section -->
+	
 	
 	<!-- Start About Section -->
 	<section id="about" class="about-area section-padding">
@@ -208,7 +186,7 @@
 							<h2>O momento da inovação</h2>
 							<p>Ao meio a tanta incerteza gerada pela pandemia, as empresas estão sofrendo para dar significado ao que passamos a chamar de “novo normal”. Nós acreditamos que, mesmo em tempos tão incertos, empresas podem se transformar e tornarem-se mais resilientes por meio da inovação tecnológica.</p>
 							<p>É aí que nós entramos. Utilizando o modelo ágil em nossas entregas, empregamos tecnologias inovadoras na construção de aplicações de serviços que permitirá a sua empresa, rapidamente atingir a transformação digital. Inovação é a palavra chave para você acelerar o teste de novos cenários empresariais e incorporar em sua operação, o que realmente ampliará a sua vantagem competitiva.</p>
-							<a class="button" href="#">Saiba mais</a>
+							<a class="button" href="./sobre.html">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -239,7 +217,7 @@
 							<p>Fazemos uso de tecnologias emergentes para construir seus serviços, com a velocidade e agilidade que permitirá você atender às suas necessidades de negócio.</p>
 						</div>
 						<div class="services-details-btn">
-							<a class="more-btn" href="#">Saiba mais</a>
+							<a class="more-btn" href="./servicos/fabrica-software.html">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -253,7 +231,7 @@
 							<p>Nós traduzimos os dados em informações quantificáveis e qualificáveis, que geram insights para o crescimento<br/> de nossos clientes.</p>
 						</div>
 						<div class="services-details-btn">
-							<a class="more-btn" href="#">Saiba mais</a>
+							<a class="more-btn" href="./servicos/aplicacoes-analiticas.html" >Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -267,7 +245,7 @@
 							<p>Das integrações de software mais simples às regras de negócio mais complexas. Analisamos e oferecemos a solução ideal para a integração de seus sistemas.</p>
 						</div>
 						<div class="services-details-btn">
-							<a class="more-btn" href="#">Saiba mais</a>
+							<a class="more-btn" href="./servicos/processos.html">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -281,7 +259,7 @@
 							<p>Impulsione o crescimento do seu negócio utilizando mecanismos<br/>da Inteligência Artificial.</p>
 						</div>
 						<div class="services-details-btn">
-							<a class="more-btn" href="#">Saiba mais</a>
+							<a class="more-btn" href="./servicos/ia.html">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -295,7 +273,7 @@
 							<p>A robotização permite automatizar processos repetitivos que não geram valor, com um retorno no primeiro<br/>ano de 30 até 200%.</p>
 						</div>
 						<div class="services-details-btn">
-							<a class="more-btn" href="#">Saiba mais</a>
+							<a class="more-btn" href="./servicos/robotizacao.html">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -309,7 +287,7 @@
 							<p>Saiba como a Internet das Coisas (IoT) pode auxiliar na sua expansão e diferenciação perante o mercado.</p>
 						</div>
 						<div class="services-details-btn">
-							<a class="more-btn" href="#">Saiba mais</a>
+							<a class="more-btn" href="./servicos/iot.html">Saiba mais</a>
 						</div>
 					</div>
 				</div>
@@ -323,8 +301,33 @@
 	</section>
 	<!-- End Service Section -->
 
+	<!-- Start About-Scrum Section -->
+	<section id="metodologia" class="about-area section-padding">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="about-image-wrapper">
+						<img src="assets/img/scrum.jpg" alt="About image">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="about-content">
+						<div class="about-content-text">
+							<h5>Metodologia</h5> 
+							<h2>Método Ágil (SCRUM)</h2>
+							<p>Os métodos ágeis são uma alternativa à gestão tradicional de projetos, eles nasceram nos braços do desenvolvimento de software, mas hoje podem ser aplicados a qualquer tipo de projeto (inclusive os que não se remetem a construção de sistemas). Os métodos ágeis vem ajudando muitas equipes a encarar a imprevisibilidades dentro de um projeto através de entregas incrementais e ciclos iterativos. As metodologias ágeis passaram a ser uma alternativa aos métodos tradicionais, também conhecido como método cascata.</p>
+							<p>Os métodos ágeis buscam promover um processo de gerenciamento de projetos que incentivar a inspeção e adaptação frequente. É uma filosofia que acaba por incentiva o maior trabalho em equipe, a auto-organização, a comunicação frequente, o foco no cliente e a entrega de valor. Basicamente, os métodos ágeis são um conjunto de práticas eficazes que se destinam a permitir a entrega rápida e de alta qualidade do produto, tendo uma abordagem de negócios que alinha o desenvolvimento do projeto com as necessidades dos objetivos empresariais.</p>
+							<a class="button" href="./scrum.html">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About-Scrum Section -->
+
 	<!-- Start Overview Section -->
-	<section class="overview-section bg-grey section-padding">
+	<section class="overview-section bg-gray section-padding">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6">
@@ -361,7 +364,7 @@
 					<div class="single-counter">
 						<div class="counter-contents">
 							<h2>
-								<span class="counter-number">100</span>
+								<span class="counter-number">10000</span>
 								<span>k</span>
 							</h2>
 							<h3 class="counter-heading">Complete Projects</h3>
@@ -407,13 +410,13 @@
 	<!-- End Counter Section -->
 
 	<!-- Start Project Section -->
-	<section id="project" class="project-area section-padding">
+	<section id="cases" class="project-area bg-gray section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
 						<h5>Solutions Projects</h5>
-						<h2>Latest Project</h2>
+						<h2>Cases de Sucesso</h2>
 					</div>
 				</div>
 			</div>
@@ -421,12 +424,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-project">
 						<div class="project-image">
-							<img src="assets/img/project/work-1.jpg" alt="image">
+							<img src="assets/img/project/biomecanica.png" alt="Biomecanica Logo">
 						</div>
 						<div class="works-overly-info">
 							<div class="text">
-								<h3><a href="#">IT Portfolio Management</a></h3>
-								<a href="#" class="works-category">Data Analysis</a>
+								<h3><a href="#">Biomecanica</a></h3>
+								<a href="#" class="works-category">E-commerce</a>
 							</div>
 						</div>
 					</div>
@@ -434,12 +437,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-project">
 						<div class="project-image">
-							<img src="assets/img/project/work-2.jpg" alt="image">
+							<img src="assets/img/project/pin4pay.png" alt="Pin4Pay Logo">
 						</div>
 						<div class="works-overly-info">
 							<div class="text">
-								<h3><a href="#">IT Portfolio Management</a></h3>
-								<a href="#" class="works-category">Business Intelligence</a>
+								<h3><a href="#">Pin4Pay</a></h3>
+								<a href="#" class="works-category">Analytics</a>
 							</div>
 						</div>
 					</div>
@@ -447,12 +450,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-project">
 						<div class="project-image">
-							<img src="assets/img/project/work-3.jpg" alt="image">
+							<img src="assets/img/project/global-empregos.png" alt="Global Empregos Logo">
 						</div>
 						<div class="works-overly-info">
 							<div class="text">
-								<h3><a href="#">IT Portfolio Management</a></h3>
-								<a href="#" class="works-category">Data Management</a>
+								<h3><a href="#">Global Empregos</a></h3>
+								<a href="#" class="works-category">Soluções Web e App / RPA</a>
 							</div>
 						</div>
 					</div>
@@ -460,12 +463,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-project">
 						<div class="project-image">
-							<img src="assets/img/project/work-4.jpg" alt="image">
+							<img src="assets/img/project/idee-logo.png" alt="Logo IDEE Consult">
 						</div>
 						<div class="works-overly-info">
 							<div class="text">
-								<h3><a href="#">IT Portfolio Management</a></h3>
-								<a href="#" class="works-category">IT Consulting</a>
+								<h3><a href="#">IDEE Consult</a></h3>
+								<a href="#" class="works-category">Soluções Web</a>
 							</div>
 						</div>
 					</div>
@@ -473,33 +476,14 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="single-project">
 						<div class="project-image">
-							<img src="assets/img/project/work-5.jpg" alt="image">
+							<img src="assets/img/project/ico-logo.png" alt="Logo ICO Estacionamentos">
 						</div>
 						<div class="works-overly-info">
 							<div class="text">
-								<h3><a href="#">IT Portfolio Management</a></h3>
-								<a href="#" class="works-category">Managed Analytics</a>
+								<h3><a href="#">ICO Estacionamentos</a></h3>
+								<a href="#" class="works-category">Sustenção de Sistemas em Operação</a>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-project">
-						<div class="project-image">
-							<img src="assets/img/project/work-6.jpg" alt="image">
-						</div>
-						<div class="works-overly-info">
-							<div class="text">
-								<h3><a href="#">IT Portfolio Management</a></h3>
-								<a href="#" class="works-category">Data Security</a>
-							</div>
-						</div>
-					</div>
-				</div>
-                <!-- project more button -->
-				<div class="col-md-12">
-					<div class="project-more-btn text-center">
-						<a class="button" href="#">View More Works</a>
 					</div>
 				</div>
 			</div>
@@ -507,7 +491,7 @@
 	</section>
 	<!-- End Projects Section -->
 
-
+	
 
 	<!-- Start Team Section -->
 	<section id="team" class="team-area section-padding">
@@ -515,14 +499,14 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h5>Expert Team Member</h5>
-						<h2>Meet Team</h2>
+						<h5>Conheça nossa Equipe</h5>
+						<h2>Nosso Time</h2>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="single-team-box">
 						<div class="team-image">
-							<img src="assets/img/team/team-1.jpg" alt="team" />
+							<img src="assets/img/team/helcio.jpg" alt="Helcio Silva" />
 							<div class="team-social-icon">
 								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
 								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
@@ -530,15 +514,15 @@
 							</div>
 						</div>
 						<div class="team-info">
-							<h3>Ava Farrington</h3>
-							<span>Founder, ceo</span>
+							<h3>Helcio Silva</h3>
+							<span>CEO sócio-fundador</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="single-team-box">
 						<div class="team-image">
-							<img src="assets/img/team/team-2.jpg" alt="team" />
+							<img src="assets/img/team/guilherme.jpg" alt="Guilherme Guimarães" />
 							<div class="team-social-icon">
 								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
 								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
@@ -546,15 +530,15 @@
 							</div>
 						</div>
 						<div class="team-info">
-							<h3>Kevin Haley</h3>
-							<span>Co-founder, cto</span>
+							<h3>Guilherme Guimarães</h3>
+							<span>Arquiteto de Soluções</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="single-team-box">
 						<div class="team-image">
-							<img src="assets/img/team/team-3.jpg" alt="team" />
+							<img src="assets/img/team/paulo-pico.jpg" alt="Paulo Araújo" />
 							<div class="team-social-icon">
 								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
 								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
@@ -562,8 +546,216 @@
 							</div>
 						</div>
 						<div class="team-info">
-							<h3>Alishia Fulton</h3>
-							<span>Chief creative officer</span>
+							<h3>Paulo Araújo</h3>
+							<span>Analista Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/tiago-temporaria.jpg" alt="Tiago Góes" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Tiago Góes</h3>
+							<span>Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/1.jpg" alt="José Roberto" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>José Roberto</h3>
+							<span>Especialista em Banco de Dados</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/alisson.jpg" alt="Alisson Torte" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Alisson Torte</h3>
+							<span>Product Owner</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/lucas.jpg" alt="Lucas Guedes" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Lucas Guedes</h3>
+							<span>Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/junior 1.jpg" alt="Júnior Possari" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Júnior Possari</h3>
+							<span>Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/homero.jpg" alt="Homero Barbosa" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Homero Barbosa</h3>
+							<span>Analista Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/rafael 1.jpg" alt="Rafael Monteiro" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Rafael Monteiro</h3>
+							<span>Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/ricardo 1.jpg" alt="Ricardo Homero" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Ricardo Homero</h3>
+							<span>Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/gustavo-temporaria.jpg" alt="Gustavo Conti" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Gustavo Conti</h3>
+							<span>Analista Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/natalia.jpg" alt="Natália de Castro" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Natália de Castro</h3>
+							<span>Analista de Marketing</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/evanea.jpg" alt="Evanea Silva" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Evanea Silva</h3>
+							<span>Admnistrativo Financeiro</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/angelo 1.jpg" alt="Angelo Augusto" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Angelo Augusto</h3>
+							<span>Desenvolvedor</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-box">
+						<div class="team-image">
+							<img src="assets/img/team/mauricio.jpg" alt="Maurício Ribeiro" />
+							<div class="team-social-icon">
+								<a href="#" class="social-color-1"><i class="fa fa-facebook-f"></i></a>
+								<a href="#" class="social-color-2"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="social-color-3"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Maurício Ribeiro</h3>
+							<span>SCRUM Master</span>
 						</div>
 					</div>
 				</div>
@@ -578,20 +770,20 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h5>Our Client Say</h5>
-						<h2>Testimonials</h2>
+						<h5>O nossos clientes estão dizendo</h5>
+						<h2>Depoimentos</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="testimonial-slide">
-						<div class="owl-carousel owl-theme">
+						<div class="owl-carousel owl-theme depoimentos-carousel">
 							<!-- testimonials item -->
 							<div class="single-testimonial">
 								<div class="testimonial-content-inner">
 									<div class="testimonial-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
+										<p>"Poder contar com Pro4tech, viabilizou que nossa empresa tenha o primeiro e-commerce do mercado de ortopedia do mundo! Construímos juntos uma parceria e interatividade única, que permitiu uma entrega que excedeu nossas expectativas!"</p>
 										<div class="rating-box">
 											<ul>
 												<li><i class="fa fa-star"></i></li>
@@ -600,16 +792,16 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 											</ul>
-											<h6>Google</h6>
+											<h6>Biomecanica Brasil e Bioscience Suíça</h6>
 										</div>
 									</div>
 									<div class="author-info-box">
 										<div class="author-img">
-											<img src="assets/img/client/testimonial-1.jpg" alt="testimonial">
+											<img src="assets/img/client/ricardo-britto.jpg" alt="testimonial">
 										</div>
 										<div class="author-bio-info">
-											<h3>Saabir al-Obeid</h3>
-											<span>Managing Director</span>
+											<h3>Ricardo Brito</h3>
+											<span>CMO</span>
 										</div>
 									</div>
 								</div>
@@ -618,7 +810,7 @@
 							<div class="single-testimonial">
 								<div class="testimonial-content-inner">
 									<div class="testimonial-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
+										<p>"A Pro4tech, foi o parceiro ideal para o desenvolvimento do nosso App,  a metodologia, o respeito aos prazos e a inovação, são os destaques deste projeto de sucesso."</p>
 										<div class="rating-box">
 											<ul>
 												<li><i class="fa fa-star"></i></li>
@@ -627,74 +819,21 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 											</ul>
-											<h6>Google</h6>
+											<h6>Global Empregos</h6>
 										</div>
 									</div>
 									<div class="author-info-box">
 										<div class="author-img">
-											<img src="assets/img/client/testimonial-2.jpg" alt="testimonial">
+											<img src="assets/img/client/paula-mattus.jpg" alt="testimonial">
 										</div>
 										<div class="author-bio-info">
-											<h3>Ruben Houston</h3>
-											<span>Service Manager</span>
+											<h3>Paula Mattus</h3>
+											<span>Gerente de RH</span>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- testimonials item -->
-							<div class="single-testimonial">
-								<div class="testimonial-content-inner">
-									<div class="testimonial-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
-										<div class="rating-box">
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<h6>Google</h6>
-										</div>
-									</div>
-									<div class="author-info-box">
-										<div class="author-img">
-											<img src="assets/img/client/testimonial-3.jpg" alt="testimonial">
-										</div>
-										<div class="author-bio-info">
-											<h3>Rose Hopkins</h3>
-											<span>Account Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- testimonials item -->
-							<div class="single-testimonial">
-								<div class="testimonial-content-inner">
-									<div class="testimonial-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
-										<div class="rating-box">
-											<ul>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-											<h6>Google</h6>
-										</div>
-									</div>
-									<div class="author-info-box">
-										<div class="author-img">
-											<img src="assets/img/client/testimonial-4.jpg" alt="testimonial">
-										</div>
-										<div class="author-bio-info">
-											<h3>Monica Frazier</h3>
-											<span>Solutions Coordinator</span>
-										</div>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -709,8 +848,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h5>Help of the following FAQs</h5>
-						<h2>Frequently Asked Questions</h2>
+						<h5>O que os clientes estão perguntando</h5>
+						<h2>Perguntas Frequentes</h2>
 					</div>
 				</div>
 			</div>
@@ -719,20 +858,26 @@
 					<div class="faq-accordion first-faq">
 						<ul class="accordion">
 							<li class="accordion-item">
-								<a class="accordion-title active" href="javascript:void(0)"> <i class="fa fa-caret-down"></i> What do I do when my computer crashes?</a>
-								<p class="accordion-content show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+								<a class="accordion-title active" href="javascript:void(0)"> <i class="fa fa-caret-down"></i>Quais são as vertentes da nossa fábrica de software?</a>
+								<p class="accordion-content show">Sustentação de sistemas em operação, Fábrica de programas e Fábrica de projetos</p>
 							</li>
 							<li class="accordion-item">
-								<a class="accordion-title" href="javascript:void(0)"> <i class="fa fa-caret-down"></i> There is no display on the monitor, what do I do now?</a>
-								<p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum.</p>
+								<a class="accordion-title" href="javascript:void(0)"> <i class="fa fa-caret-down"></i>O que é fábrica de programas?</a>
+								<p class="accordion-content">A Fábrica de Programas é uma vertente da Fábrica de Software que se responsabiliza pela produção padronizada de programas seguindo especificações definidas pelo cliente. Neste modelo todas as definições advêm do cliente que assume os papéis de definição e arquitetura da solução, ficando para a Pro4Tech a codificação e os testes unitários e integrados. </p>
 							</li>
 							<li class="accordion-item">
-								<a class="accordion-title" href="javascript:void(0)"> <i class="fa fa-caret-down"></i> How can I clean my keyboard?</a>
-								<p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum.</p>
+								<a class="accordion-title" href="javascript:void(0)"> <i class="fa fa-caret-down"></i>O que é sustentação de sistemas em operação?</a>
+								<p class="accordion-content paragraph">
+									<span style="display: block;">1. Manutenção Evolutiva (ou perfectiva): Modificações não previstas no documento de requisitos original do software. Tem por intuito melhorar a qualidade do software, acrescentando novas funcionalidades, melhorando seu desempenho, ou até mesmo modificando seu código-fonte buscando obter melhor legibilidade ou adequação a alguns paradigmas de programação.</span>
+									<span style="display: block;">2. Manutenção Adaptativa: Adaptação no software para acomodar as constantes mudanças ocorridas em seu ambiente externo, essas mudanças podem ser em regras de negócio associadas à mudanças de leis que gerem consequências em funções do sistema, assim como a criação de uma nova plataforma de hardware, podendo ser uma nova geração de processadores, ou periféricos na qual o software consiga aproveitar seus recursos, além de uma nova versão de um sistema operacional que possa não ser totalmente compatível ao software.</span>
+									<span style="display: block;">3. Manutenção Corretiva: Correção de erros no software que não foram identificados na fase teste. Em determinadas situações esses erros podem não atrapalhar a execução do software e não acarretar maiores preocupações, já que este pode ser solucionado por meio de simples reparos, no entanto pode haver casos mais complexos que necessite de um reparo temporário com o objetivo de o software voltar a executar suas funções básicas e que haja tempo a seus mantenedores para conseguir solucionar o erro em sua totalidade e assim disponibilizá-lo em uma nova versão.</span>
+									<span style="display: block;">4. Manutenção Preventiva (reengenharia): Alterações no software buscando melhorar a confiabilidade ou oferecer uma estrutura melhor para futuras manutenções. A manutenção preventiva parte de uma observação reconhecida pelos mantenedores sobre o que poderá gerar algum tipo de erro ou limitação no software, desta forma tal erro ou limitação será tratado antes que um problema venha a ocorrer.</span>
+								</p>
 							</li>
 							<li class="accordion-item">
-								<a class="accordion-title" href="javascript:void(0)"> <i class="fa fa-caret-down"></i> Why is my computer mouse acting erratically?</a>
-								<p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum.</p>
+								<a class="accordion-title" href="javascript:void(0)"> <i class="fa fa-caret-down"></i>O que é fábrica de projetos?</a>
+								<p class="accordion-content">A Fábrica de Projetos da Pro4Tech compreende o desenvolvimento completo de sistemas de informação, incluindo os processos de concepção, desenho, construção,testes e implantação do software. 
+									Nosso intuito é oferecer às empresas otimização de tempo e custos. É uma estratégia para que a empresa não desvie de seu foco. A Fábrica de Projetos faz uso dos recursos da Fábrica de programas,buscando maior aproveitamento dos mesmos. Neste modelo todas as definições são efetuadas pela Pro4Tech, fazendo uso da metodologia ágil e com um protocolo claro de aceite do cliente em todas as fases do desenvolvimento.</p>
 							</li>
 						</ul>
 					</div>
@@ -843,13 +988,35 @@
 	</section>
 	<!-- End Blog Section -->
 
+	<!-- Start Partner Logo Section -->
+	<div class="partner-area pt-70 pb-30">
+		<div class="container">
+			<div id="partner-carousel" class="partner-carousel owl-carousel owl-theme owl-loaded">
+				<div class="partner-item">
+					<img src="assets/img/partner-logo/biomecanica-marca.png" alt="Logo Biomecanica">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partner-logo/global-marca.png" alt="Logo Global Empregos">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partner-logo/ico-marca.png" alt="Logo ICO Estacionamentos">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partner-logo/idee-marca.png" alt="Logo IDEE Consult">
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- End Partner Logo Section -->
+
 	<!-- Start Contact Section -->
-	<section id="contact" class="contact-area section-padding">
+	<section id="contact" class="contact-area section-padding-bottom bg-gray">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12">
 					<div class="section-title">
-						<h5>Fale com os nossos especialistas</h5>
+						<h5 class="contact-title">Fale com os nossos especialistas</h5>
 						<h2>Contato</h2>
 					</div>
 				</div>
@@ -887,7 +1054,7 @@
 				</div>
 				<div class="col-lg-7 col-md-12">
 					<p class="form-message"></p><br />
-					<form class="contact-form form" id="contact-form" action="mail.php" method="POST">
+					<form class="contact-form form" id="contact-form" action="https://formspree.io/f/mleokydw" method="POST">
 						<div class="controls">
 							<div class="row">
 								<div class="col-lg-6 col-md-12">
@@ -897,7 +1064,7 @@
 								</div>
 								<div class="col-lg-6 col-md-12">
 									<div class="form-group has-error has-danger">
-										<input id="form_email" type="email" name="email" placeholder="Seu Email" required="* informação exigida" />
+										<input id="form_email" type="email" name="_replyto" placeholder="Seu Email" required="* informação exigida" />
 									</div>
 								</div>
 								<div class="col-lg-12 col-md-12">
@@ -943,7 +1110,7 @@
 						<div class="footer-content mid-content">
 							<h3>Usefull Link</h3>
 							<ul class="footer-link">
-								<li><a href="#">Sobre nós</a></li>
+								<li><a href="./sobre.html">Sobre nós</a></li>
 								<li><a href="#">Contato</a></li>
 								<li><a href="#">Termos e condições</a></li>
 								<li><a href="#">Privecy Policy</a></li>
@@ -996,6 +1163,24 @@
 	<script src="assets/js/plugins.js"></script>
 	<!--Site Main Custom Js-->
 	<script src="assets/js/main.js"></script>
+	<!-- Linkedin Insight -->
+	<script type="text/javascript">
+        _linkedin_partner_id = "3382665";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+	<script type="text/javascript">
+        (function(){
+			var s = document.getElementsByTagName("script")[0];
+			var b = document.createElement("script");
+			b.type = "text/javascript";b.async = true;
+			b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+			s.parentNode.insertBefore(b, s);
+		})();
+    </script>
+	<noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3382665&fmt=gif" />
+    </noscript>
 </body>
 
 </html>

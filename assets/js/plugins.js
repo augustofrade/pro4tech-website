@@ -194,6 +194,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 
 // Ajax mail js
+/*
 $(function() {
 
 	// Get the form.
@@ -202,7 +203,7 @@ $(function() {
 	// Get the messages div.
 	var formMessages = $('.form-message');
 
-	// Set up an event listener for the contact form.
+	Set up an event listener for the contact form.
 	$(form).submit(function(e) {
 		// Stop the browser from submitting the form.
 		e.preventDefault();
@@ -242,3 +243,4 @@ $(function() {
 	});
 
 });
+*/
