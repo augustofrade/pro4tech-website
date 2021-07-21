@@ -2586,6 +2586,8 @@ textarea:focus {
 
 .p-bg-scrum { background-image: url("../img/scrum.jpg"); }
 
+.p-bg-sobre { background-image: url("../img/sobre-nos-capa.jpg"); }
+
 .paragraph {
 	text-indent: 50px;
 }
