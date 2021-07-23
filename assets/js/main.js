@@ -168,6 +168,7 @@ $(document).ready(function() {
         margin: 0,
         autoplay: true,
         smartSpeed: 800,
+		autoplayTimeout: 5000,
         animateOut: 'fadeOut',
 		nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
