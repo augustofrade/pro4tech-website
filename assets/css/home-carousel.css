@@ -1,0 +1,136 @@
+/* Home Carousel */
+
+#slider-tab {
+	position: absolute;
+	height: 160px;
+	background: #fff;
+	width: 100%;
+	z-index: 100;
+	bottom: -10px;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 10px 15px -6px #ddd; 
+	box-shadow: 0px 10px 15px -6px #ddd;
+	transition: height .3s ease;
+}
+
+#slider-tab-expand-btn {
+	display: none;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 40px;
+	background: #eee;
+	cursor: pointer;
+	z-index: 1;
+}
+
+#slider-tab-expand-btn svg {
+	transform: rotate(180deg);
+	fill: #f35416;
+	width: 40px;
+	height: 40px;
+	transition: transform .2s;
+}
+
+#slider-tab-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.slider-tab-item {
+	cursor: pointer;
+	flex: 1;
+	height: 100%;
+	padding: 20px 10px;
+	background: #fff;
+	border-right: 1px solid #ddd;
+}
+
+#slider-tab-content .slider-tab-item:last-child {
+	border-right: none;
+}
+
+.slider-tab-item-inner {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: transform ease 0.3s;
+}
+
+.slider-tab-item-inner:hover {
+	transform: translateY(-10px);
+}
+
+.slider-tab-item i {
+	width: 50px;
+	height: 50px;
+}
+
+.slider-tab-item h4 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 950px) {
+	.slider-tab-item h4 {
+		font-size: 14px;	
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#slider-tab {
+		bottom: 0px;
+		height: 40px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		-webkit-box-shadow: none; 
+		box-shadow: none;
+	}
+
+	#slider-tab-expand-btn {
+		display: flex;
+	}
+
+
+	#slider-tab-content {
+		display: none;
+		overflow-y: auto;
+		flex-wrap: wrap;
+		padding: 50px 0px;
+	}
+	
+	#slider-tab-content .slider-tab-item:nth-last-child(-n+2) {
+		border-bottom: none;
+	}
+
+	.slider-tab-item {
+		border-bottom: 1px solid #ddd;
+		min-width: 50%;
+		min-height: 20vh;
+	}
+
+	.slider-tab-item-inner:hover {
+		transform: scale(1.2);
+	}
+
+	#slider-tab.active #slider-tab-expand-btn svg {
+		transform: rotate(0deg);
+
+	}
+
+	#slider-tab.active {
+		height: 40vh;
+	}
+
+	#slider-tab.active #slider-tab-content {
+		display: flex;
+	}
+	
+}

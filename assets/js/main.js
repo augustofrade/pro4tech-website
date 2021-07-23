@@ -18,7 +18,6 @@
 	$(window).on('scroll', function () {
 		var pixels = 50;
 		var top = 1200;
-		if(window.location.pathname !== "/pro4tech-website/") return; //<-- Para teste
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-lg').addClass('navbar-reduce');
 			$('.navbar-expand-lg').removeClass('navbar-trans');
@@ -97,6 +96,14 @@
 			}
 		}
 	});
+	$("#phrases-carousel").owlCarousel({
+		loop: true,
+		autoplay: true,
+		items: 1,
+		nav: false,
+		autoplayHoverPause: true
+	  });
+
 	// Testimonials owl
 	$('.testimonial-slide .owl-carousel').owlCarousel({
 		margin: 16,
@@ -173,5 +180,28 @@ $(document).ready(function() {
         $('.owl-item').not('.cloned').eq(item).find('h4').addClass('animated fadeInUp');
         $('.owl-item').not('.cloned').eq(item).find('h1').addClass('animated fadeInUp');
         $('.owl-item').not('.cloned').eq(item).find('.button').addClass('animated fadeInDown');
+		owl.trigger('stop.owl.autoplay');
+        owl.trigger('play.owl.autoplay');
     });
+
+	// Go to specific slide
+	var sliderItems = Array.from(document.getElementById("slider-tab-content").children);
+	sliderItems.forEach((item, i) => item.addEventListener("click", (e) => SliderMenuInteraction(e, i, owl) ));
+	sliderItems.forEach((item, i) => item.addEventListener("touchstart", (e) => SliderMenuInteraction(e, i, owl) ));
 });
+
+(function() {
+	let tabButton = document.getElementById("slider-tab-expand-btn");
+	tabButton.addEventListener("click", (e) => {
+		document.getElementById("slider-tab").classList.toggle("active");
+	});
+})();
+
+function SliderMenuInteraction(e, i, owl) {
+	if(e.type === "touchstart") e.preventDefault();
+	var sliderMenu = document.getElementById("slider-tab");
+	if(sliderMenu.classList.contains("active")) {
+		sliderMenu.classList.toggle("active");
+	}
+	owl.trigger('to.owl.carousel', i)
+}
