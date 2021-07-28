@@ -187,19 +187,18 @@ $(document).ready(function() {
 
 	// Go to specific slide
 	var sliderItems = Array.from(document.getElementById("slider-tab-content").children);
-	sliderItems.forEach((item, i) => item.addEventListener("click", (e) => SliderMenuInteraction(e, i, owl) ));
-	sliderItems.forEach((item, i) => item.addEventListener("touchstart", (e) => SliderMenuInteraction(e, i, owl) ));
+	sliderItems.forEach((item, i) => item.addEventListener("click", (e) => SliderMenuInteraction(i, owl) ));
 });
 
 (function() {
 	let tabButton = document.getElementById("slider-tab-expand-btn");
 	tabButton.addEventListener("click", (e) => {
 		document.getElementById("slider-tab").classList.toggle("active");
+		window.scrollTo(0, 0);
 	});
 })();
 
-function SliderMenuInteraction(e, i, owl) {
-	if(e.type === "touchstart") e.preventDefault();
+function SliderMenuInteraction(i, owl) {
 	var sliderMenu = document.getElementById("slider-tab");
 	if(sliderMenu.classList.contains("active")) {
 		sliderMenu.classList.toggle("active");

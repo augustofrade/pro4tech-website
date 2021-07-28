@@ -2420,7 +2420,7 @@ textarea:focus {
 	line-height: 35px;
 }
 
-.footer-link li a {
+.footer-link li a, a {
 	color: #e8e8e8;
 }
 
